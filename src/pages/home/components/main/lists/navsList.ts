@@ -1,12 +1,12 @@
-interface NavsList {
+export interface NavsList {
     title: string,
 }
 
 const navsList: NavsList[] = [
-  { title: '' },
-  { title: '' },
-  { title: '' },
-  { title: '' }
+  { title: 'about' },
+  { title: 'works' },
+  { title: 'contacts' },
+  { title: 'hire me' }
 ]
 
 export default navsList

@@ -1,12 +1,13 @@
 import React from 'react'
+import { NavsList } from '../main/lists/navsList'
 
-export default function Header (props: { navsList }) {
+export default function Header (props: { navsList: NavsList[] }) {
   const { navsList } = props
 
   return (
     <header className="header">
         <section className="navs">
-            {navsList.map((nav, index: number) => {
+            {navsList.map((nav: NavsList, index: number) => {
               return (
                 <div className="nav" key={index}>
                       <div className="nav__title">{nav.title}</div>

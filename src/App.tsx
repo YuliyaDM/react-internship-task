@@ -4,17 +4,20 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import './App.module.css'
-import Home from './pages/home/Home'
 import Error from './pages/error/Error'
+import Home from './pages/home/Home'
 
-export default function App () {
-  return (
+class App extends React.Component {
+  render () {
+    return (
     <Router>
       <Switch>
         <Route exact path="/"><Home /></Route>
         <Route path="*"><Error /></Route>
       </Switch>
     </Router>
-  )
+    )
+  }
 }
+
+export default App

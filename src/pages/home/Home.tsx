@@ -6,8 +6,6 @@ import featuresWorks from './components/main/lists/featuredWorks'
 import navsList from './components/main/lists/navsList'
 import Main from './components/main/Main'
 
-import './style/Home.module.sass'
-
 function Home () {
   return (
     <div className="home">

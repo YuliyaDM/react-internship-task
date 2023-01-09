@@ -2,8 +2,6 @@ import React from 'react'
 import { Expertise } from './lists/expertises'
 import { FeaturesWorks } from './lists/featuredWorks'
 
-import './style/Main.module.sass'
-
 export default function Main (props: { featuredWorksList: FeaturesWorks[], expertisesList: Expertise[] }) {
   const { featuredWorksList, expertisesList } = props
 
