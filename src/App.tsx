@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route
 } from 'react-router-dom'
 import './App.module.css'
@@ -11,10 +11,10 @@ import Error from './pages/error/Error'
 export default function App () {
   return (
     <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route path="*" element={ <Error />}></Route>
-      </Routes>
+      <Switch>
+        <Route exact path="/"><Home /></Route>
+        <Route path="*"><Error /></Route>
+      </Switch>
     </Router>
   )
 }
