@@ -1,17 +1,17 @@
 import React from 'react'
-import { NavsList } from '../main/lists/navsList'
-import './style/Header.module.sass'
+import INavsList from '../../../../interfaces/INavsList.interfaces'
+import './style/Header.module.scss'
 
-export default function Header (props: { navsList: NavsList[] }) {
+export default function Header (props: { navsList: INavsList[] }) {
   const { navsList } = props
 
   return (
     <header className="header">
         <section className="navs">
-            {navsList.map((nav: NavsList, index: number) => {
+            {navsList.map((nav: INavsList, index: number) => {
               return (
                 <div className="nav" key={index}>
-                      <div className="nav__title">{nav.title}</div>
+                  <div className="nav__title">{nav.title}</div>
                 </div>
               )
             })}
@@ -20,8 +20,10 @@ export default function Header (props: { navsList: NavsList[] }) {
             <div className="author-bio__name">
                 Daniel Banquo
             </div>
-            <div className="author-bio__country">Netherlands</div>
-            <div className="author-bio__profession">Designer</div>
+            <div className="author-bio__info">
+              <div className="author-bio__country">Netherlands</div>
+              <div className="author-bio__profession">Designer</div>
+            </div>
         </section>
         <section className="button">
             <div className="button__title">Hire Me</div>

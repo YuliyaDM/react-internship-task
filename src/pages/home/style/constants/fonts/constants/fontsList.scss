@@ -1,0 +1,32 @@
+@use "sass:map";
+
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 600,
+    "bold": 800,
+);
+
+$font-sizes: (
+    "smaller": 10px,
+    "small": 12px,
+    "meduium": 14px,
+    "default": 16px,
+    "big": 24px,
+    "bigger": 32px,
+    "biggest": 56px,
+    "giant": 156px, // for the header phrase
+);
+
+$font-styles: (
+    "default": normal,
+    "oblique": oblique,
+);
+
+$fonts-list: (
+    roboto: url(''),
+    sans-serif: url(''),
+    monospace: url(''),
+    font-family_4: url(''),
+    font-family_5: url(''),
+);

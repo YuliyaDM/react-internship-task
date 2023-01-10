@@ -1,0 +1,10 @@
+@use "sass:color";
+@use "sass:map";
+
+@function get-lighter($color, $percentage) {
+    @return color.scale($color, $lightness: $percentage);
+};
+
+@function get-darker($color, $percentage) {
+    @return color.scale($color, $blackness: $percentage);
+};

@@ -1,10 +1,12 @@
 import React from 'react'
+import expertises from '../../constants/expertises'
+import featuresWorks from '../../constants/featuredWorks'
+import navsList from '../../constants/navsList'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
-import expertises from './components/main/lists/expertises'
-import featuresWorks from './components/main/lists/featuredWorks'
-import navsList from './components/main/lists/navsList'
 import Main from './components/main/Main'
+
+import './style/Home.module.scss'
 
 function Home () {
   return (

@@ -4,14 +4,13 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 html, body {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 #root {
-  height: 100%;
   width: 100%;
 }/*# sourceMappingURL=index.css.map */

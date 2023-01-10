@@ -1,8 +1,6 @@
-export interface NavsList {
-    title: string,
-}
+import INavsList from '../interfaces/INavsList.interfaces'
 
-const navsList: NavsList[] = [
+const navsList: INavsList[] = [
   { title: 'about' },
   { title: 'works' },
   { title: 'contacts' },
