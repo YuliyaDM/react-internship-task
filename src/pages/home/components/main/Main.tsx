@@ -1,6 +1,7 @@
 import React from 'react'
 import { Expertise } from './lists/expertises'
 import { FeaturesWorks } from './lists/featuredWorks'
+import './style/Main.module.sass'
 
 export default function Main (props: { featuredWorksList: FeaturesWorks[], expertisesList: Expertise[] }) {
   const { featuredWorksList, expertisesList } = props
@@ -32,12 +33,12 @@ export default function Main (props: { featuredWorksList: FeaturesWorks[], exper
                 {expertisesList.map((expertises: Expertise, index: number) => {
                   return (
                     <div className="expertise" key={index}>
-                          <div className="expertise-image-container">{expertises.img}</div>
+                          <div className="expertise__image-container">{expertises.img}</div>
                         <div className="expertise-info">
-                              <div className="title">{expertises.title}</div>
-                            <div className="experience-info">
-                                  <div className="experience-years">{expertises.experience.years}</div>
-                                  <div className="experience-portfolio-amount">{expertises.experience.portfolio_amount}</div>
+                            <div className="expertise-info__title">{expertises.title}</div>
+                            <div className="expertise-info__experience">
+                                  <div className="expertise-info__experience-years">{expertises.experience.years}</div>
+                                  <div className="expertise-info__experience-portfolio-amount">{expertises.experience.portfolio_amount}</div>
                             </div>
                          </div>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter,
+  Routes,
   Route
 } from 'react-router-dom'
 import Error from './pages/error/Error'
@@ -10,12 +10,12 @@ import Home from './pages/home/Home'
 class App extends React.Component {
   render () {
     return (
-    <Router>
-      <Switch>
-        <Route exact path="/"><Home /></Route>
-        <Route path="*"><Error /></Route>
-      </Switch>
-    </Router>
+      <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='*' element={<Error></Error>}></Route>
+          </Routes>
+      </BrowserRouter>
     )
   }
 }

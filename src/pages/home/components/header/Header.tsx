@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavsList } from '../main/lists/navsList'
+import './style/Header.module.sass'
 
 export default function Header (props: { navsList: NavsList[] }) {
   const { navsList } = props
