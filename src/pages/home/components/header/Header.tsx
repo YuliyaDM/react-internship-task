@@ -7,7 +7,7 @@ export default function Header (props: { navsList: INavsList[] }) {
 
   return (
     <header className="header">
-        <section className="navs">
+        <nav className="navs">
             {navsList.map((nav: INavsList, index: number) => {
               return (
                 <div className="nav" key={index}>
@@ -15,11 +15,11 @@ export default function Header (props: { navsList: INavsList[] }) {
                 </div>
               )
             })}
-        </section>
+        </nav>
         <section className="author-bio">
-            <div className="author-bio__name">
+            <strong className="author-bio__name">
                 Daniel Banquo
-            </div>
+            </strong>
             <div className="author-bio__info">
               <div className="author-bio__country">Netherlands</div>
               <div className="author-bio__profession">Designer</div>

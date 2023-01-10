@@ -1,13 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import 'react-router-dom'
 import App from './App'
 
-const root = document.getElementById('root')
+const rootEl = document.getElementById('root') as HTMLElement
 
-ReactDOM.render(
+const root = createRoot(rootEl)
+
+root.render(
   <React.StrictMode>
-    <App></App>
-  </React.StrictMode>,
-  root
+    <App />
+  </React.StrictMode>
 )
