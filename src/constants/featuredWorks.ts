@@ -1,29 +1,26 @@
-export interface FeaturesWorks {
-    title: string,
-    date: string,
-}
+import IFeaturesWork from '../interfaces/IFeaturesWork.interface'
 
-const featuresWorks: FeaturesWorks[] = [
+const featuredWorks: IFeaturesWork[] = [
   {
-    title: '',
-    date: ''
+    title: 'Art director',
+    date: '2021'
   },
   {
-    title: '',
-    date: ''
+    title: 'Art director',
+    date: '2021'
   },
   {
-    title: '',
-    date: ''
+    title: 'Art director',
+    date: '2021'
   },
   {
-    title: '',
-    date: ''
+    title: 'Art director',
+    date: '2021'
   },
   {
-    title: '',
-    date: ''
+    title: 'Art director',
+    date: '2021'
   }
 ]
 
-export default featuresWorks
+export default featuredWorks

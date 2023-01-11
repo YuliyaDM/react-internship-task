@@ -1,10 +1,15 @@
-import React from 'react'
-import { Expertise } from '../../../../constants/expertises'
-import { FeaturesWorks } from '../../../../constants/featuredWorks'
+/* eslint-disable camelcase */
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react'
+import expertises from '../../../../constants/expertises'
+import featuredWorks from '../../../../constants/featuredWorks'
+import IExpertise from '../../../../interfaces/IExpertise.interface'
+import IFeaturesWork from '../../../../interfaces/IFeaturesWork.interface'
 import './style/Main.module.scss'
 
-export default function Main (props: { featuredWorksList: FeaturesWorks[], expertisesList: Expertise[] }) {
-  const { featuredWorksList, expertisesList } = props
+export default function Main () {
+  const [default_featuredWorks, updated_featuredWorks] = useState(featuredWorks)
+  const [default_expertisesList, updated_expertisesList] = useState(expertises)
 
   return (
     <main className="main">
@@ -15,7 +20,7 @@ export default function Main (props: { featuredWorksList: FeaturesWorks[], exper
                 <div className="description__data">2021-2022</div>
             </div>
             <div className="works">
-                  {featuredWorksList.map((work: FeaturesWorks, index) => {
+                  {default_featuredWorks.map((work: IFeaturesWork, index: number) => {
                     return (
                         <div key={index} className="work">
                             <div className="work__title">{work.title}</div>
@@ -30,17 +35,34 @@ export default function Main (props: { featuredWorksList: FeaturesWorks[], exper
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vitae a enim sint illum repudiandae pariatur totam sit ratione consectetur libero et architecto commodi, possimus aperiam exercitationem iste atque deserunt.
             </div>
             <div className="expertises__list">
-                {expertisesList.map((expertises: Expertise, index: number) => {
+                {default_expertisesList.map((expertises: IExpertise, index: number) => {
                   return (
                     <div className="expertise" key={index}>
-                          <div className="expertise__image-container">{expertises.img}</div>
-                        <div className="expertise-info">
-                            <div className="expertise-info__title">{expertises.title}</div>
-                            <div className="expertise-info__experience">
-                                  <div className="expertise-info__experience-years">{expertises.experience.years}</div>
-                                  <div className="expertise-info__experience-portfolio-amount">{expertises.experience.portfolio_amount}</div>
+                      <div className="expertise__image">
+                        <div className="expertise-image__container">{expertises.img}</div>
+                        <div className="expertise-image__index">{ index }</div>
+                      </div>
+                      <div className="expertise-info">
+                        <div className="expertise-info__title">{expertises.title}</div>
+                        <div className="expertise-info__experience">
+                          <div className="expertise-info__experience-years">
+                            <div className="experience-years__title">
+                              Years
                             </div>
-                         </div>
+                            <div className="experience-year__info">
+                              {expertises.experience.years}
+                            </div>
+                          </div>
+                          <div className="expertise-info__experience-portfolio-amount">
+                            <div className="experience-portfolio-amount__title">
+                              Portfolio
+                            </div>
+                            <div className="experience-portfolio-amount__info">
+                              {expertises.experience.portfolio_amount}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   )
                 })}

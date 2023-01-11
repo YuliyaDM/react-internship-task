@@ -1,14 +1,30 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
+import socialLinks from '../../../../constants/socialLinks'
+import ISocialLink from '../../../../interfaces/ISocialLink.interface'
 import './style/Footer.module.sass'
 
 export default function Footer () {
-  const [default_socialLinks, updated_socialLinks] = useState<string | null>()
+  const [default_socialLinks, updated_socialLinks] = useState<ISocialLink[]>(socialLinks)
 
-  const setActiveSocialLink = (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
-    console.log(event)
-    updated_socialLinks('active')
+  const setActiveSocialLink = (event: React.MouseEvent<HTMLElement, MouseEvent>, color: string) => {
+    const parent = event.currentTarget.parentElement as HTMLElement
+    const element = event.currentTarget
+
+    for (let i: number = 0, children = parent.children, parentLen = children.length; i < parentLen; i++) {
+      // @ts-ignore
+      children[i].style.color = ''
+    }
+
+    element.style.color = color
+  }
+
+  const openLink = (link: string): void => {
+    console.log(link)
+    setTimeout(() => {
+      window.open(link, '_blank')
+    }, 1000)
   }
 
   return (
@@ -25,18 +41,15 @@ export default function Footer () {
             <div className="socials">
                 <div className="title"></div>
                 <div className="main-info">
-                    <address className="social" onClick={event => setActiveSocialLink(event)}>
-                        <a href="https://forexample.com" className="social__title">Telegram</a>
-                    </address>
-                    <address className="social">
-                        <a href="https://forexample.com" className="social__title">Linkedin</a>
-                    </address>
-                    <address className="social">
-                        <a href="https://forexample.com" className="social__title">Github</a>
-                    </address>
-                    <address className="social">
-                        <a href="https://forexample.com" className="social__title">Discord</a>
-                    </address>
+                    {
+                        default_socialLinks.map((socialLink: ISocialLink, index: number) => {
+                          return (
+                            <address className="social" onClick={event => setActiveSocialLink(event, socialLink.color)} key={index}>
+                                <a className="social__title" onClick={() => openLink(socialLink.link)}>{socialLink.title}</a>
+                            </address>
+                          )
+                        })
+                    }
                 </div>
             </div>
             <div className="location">

@@ -1,14 +1,17 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
+import React, { useState } from 'react'
+import navsList from '../../../../constants/navsList'
 import INavsList from '../../../../interfaces/INavsList.interfaces'
 import './style/Header.module.scss'
 
-export default function Header (props: { navsList: INavsList[] }) {
-  const { navsList } = props
+export default function Header () {
+  const [default_navsList, updated_navList] = useState(navsList)
 
   return (
     <header className="header">
         <nav className="navs">
-            {navsList.map((nav: INavsList, index: number) => {
+            {default_navsList.map((nav: INavsList, index: number) => {
               return (
                 <div className="nav" key={index}>
                   <div className="nav__title">{nav.title}</div>

@@ -1,51 +1,44 @@
-export interface Expertise {
-  img: string,
-  title: string,
-  experience: {
-    years: number,
-    portfolio_amount: number,
-  }
-}
+import IExpertise from '../interfaces/IExpertise.interface'
 
-const expertises: Expertise[] = [
+const expertises: IExpertise[] = [
   {
-    img: '',
-    title: '',
+    img: '../image.png',
+    title: 'Art director',
     experience: {
-      years: 0,
-      portfolio_amount: 0
+      years: 5,
+      portfolio_amount: 34
     }
   },
   {
-    img: '',
-    title: '',
+    img: '../image.png',
+    title: 'Art director',
     experience: {
-      years: 0,
-      portfolio_amount: 0
+      years: 5,
+      portfolio_amount: 34
     }
   },
   {
-    img: '',
-    title: '',
+    img: '../image.png',
+    title: 'Art director',
     experience: {
-      years: 0,
-      portfolio_amount: 0
+      years: 5,
+      portfolio_amount: 34
     }
   },
   {
-    img: '',
-    title: '',
+    img: '../image.png',
+    title: 'Art director',
     experience: {
-      years: 0,
-      portfolio_amount: 0
+      years: 5,
+      portfolio_amount: 34
     }
   },
   {
-    img: '',
-    title: '',
+    img: '../image.png',
+    title: 'Art director',
     experience: {
       years: 0,
-      portfolio_amount: 0
+      portfolio_amount: 34
     }
   }
 ]
