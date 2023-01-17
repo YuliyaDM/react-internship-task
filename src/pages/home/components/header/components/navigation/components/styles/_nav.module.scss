@@ -1,0 +1,41 @@
+@use "../../../../styles/constants/constant" as constant;
+
+.navigation__nav {
+	@include constant.transparentBackground;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	cursor: pointer;
+
+	&-title {
+		@include constant.transparentBackground;
+
+		display: flex;
+		text-align: center;
+		position: relative;
+		letter-spacing: 1.5px;
+		color: white;
+		text-decoration: none;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.5;
+		transition: all 1s ease 0s;
+		font: {
+			size: 16px;
+		}
+		padding: {
+			top: 7.5px;
+			bottom: 7.5px;
+			left: 10px;
+			right: 10px;
+		}
+	}
+
+	&-title:hover {
+		opacity: 1;
+	}
+}

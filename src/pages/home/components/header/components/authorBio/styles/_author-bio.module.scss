@@ -1,0 +1,23 @@
+.author-bio {
+	&__container {
+		.author-bio__name {
+			background: transparent;
+		}
+		.author-bio__info {
+			.author-bio__country {
+				background: transparent;
+			}
+			.author-bio__proffession {
+				background: transparent;
+			}
+		}
+		&,
+		& > * {
+			background: transparent;
+		}
+	}
+	&,
+	& > * {
+		background: transparent;
+	}
+}

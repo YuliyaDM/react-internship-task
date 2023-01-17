@@ -1,10 +1,10 @@
-import INavsList from '../interfaces/INavsList.interfaces'
+import INav from '../interfaces/INav.interfaces'
 
-const navsList: INavsList[] = [
-  { title: 'about' },
-  { title: 'works' },
-  { title: 'contacts' },
-  { title: 'hire me' }
+const NAVS_LIST: INav[] = [
+  { title: 'ABOUT', linkTo: 'about' },
+  { title: 'WORKS', linkTo: 'works' },
+  { title: 'CONTACTS', linkTo: 'contacts' },
+  { title: 'HIRE ME', linkTo: 'hire me' }
 ]
 
-export default navsList
+export default NAVS_LIST

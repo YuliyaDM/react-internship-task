@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "../styles/constants/colors/constants/colors-list" as colors;
+
+$background: map-get(colors.$colors-types, black-var, lighter);
+
+.home {
+	width: 100%;
+	background: $background;
+}
+
+@debug $background;

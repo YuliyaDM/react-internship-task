@@ -1,46 +1,46 @@
 import IExpertise from '../interfaces/IExpertise.interface'
 
-const expertises: IExpertise[] = [
+const EXPERTISES: IExpertise[] = [
   {
-    img: '../image.png',
+    img: 'art_director.jpg',
     title: 'Art director',
     experience: {
-      years: 5,
+      years: 6,
       portfolio_amount: 34
     }
   },
   {
-    img: '../image.png',
-    title: 'Art director',
+    img: 'mentor.jpg',
+    title: 'Mentor',
     experience: {
-      years: 5,
+      years: 2,
       portfolio_amount: 34
     }
   },
   {
-    img: '../image.png',
-    title: 'Art director',
+    img: 'lead_designer.jpg',
+    title: 'Lead designer',
     experience: {
-      years: 5,
+      years: 3,
       portfolio_amount: 34
     }
   },
   {
-    img: '../image.png',
-    title: 'Art director',
+    img: 'photographer.jpg',
+    title: 'Photographer',
     experience: {
-      years: 5,
+      years: 6,
       portfolio_amount: 34
     }
   },
   {
-    img: '../image.png',
-    title: 'Art director',
+    img: 'videographer.jpg',
+    title: 'Video grapher',
     experience: {
-      years: 0,
+      years: 1,
       portfolio_amount: 34
     }
   }
 ]
 
-export default expertises
+export default EXPERTISES

@@ -20,5 +20,12 @@
         "@typescript-eslint"
     ],
     "rules": {
+		"camelcase": "off",
+		"import/first": "off",
+		"no-unused-vars": "off",
+		"indent": "off",
+		"no-tabs": "off",
+		"no-trailing-spaces": "off",
+		"no-mixed-spaces-and-tabs": "off"
     }
 }

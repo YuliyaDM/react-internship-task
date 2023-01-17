@@ -1,26 +1,26 @@
-import IFeaturesWork from '../interfaces/IFeaturesWork.interface'
+import IFeaturedWork from '../interfaces/IFeaturedWork.interface'
 
-const featuredWorks: IFeaturesWork[] = [
+const FEATURED_WORKS: IFeaturedWork[] = [
   {
     title: 'Art director',
     date: '2021'
   },
   {
-    title: 'Art director',
+    title: 'Lead designer',
     date: '2021'
   },
   {
-    title: 'Art director',
+    title: 'Mentor',
     date: '2021'
   },
   {
-    title: 'Art director',
+    title: 'Videographer',
     date: '2021'
   },
   {
-    title: 'Art director',
+    title: 'Photographer',
     date: '2021'
   }
 ]
 
-export default featuredWorks
+export default FEATURED_WORKS

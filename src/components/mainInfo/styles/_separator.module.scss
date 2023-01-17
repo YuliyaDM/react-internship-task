@@ -1,0 +1,11 @@
+$separator-size: 7.5px;
+
+.separator {
+	position: relative;
+	width: $separator-size;
+	height: $separator-size;
+	background: white;
+	transform: scale(1);
+	border-radius: 100px;
+	display: inline-block;
+}

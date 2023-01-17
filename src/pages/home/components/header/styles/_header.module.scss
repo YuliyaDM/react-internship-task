@@ -1,0 +1,12 @@
+$header-width: 100%;
+$background-image-url: url("../../../../../assets/images/author/author_1.jpg");
+
+.header {
+	width: $header-width;
+	background: {
+		image: $background-image-url;
+		position: center;
+		size: 100% auto;
+		repeat: no-repeat;
+	}
+}

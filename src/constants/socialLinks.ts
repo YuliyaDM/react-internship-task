@@ -1,6 +1,6 @@
 import ISocialLink from '../interfaces/ISocialLink.interface'
 
-const socialLinks: ISocialLink[] = [
+const SOCIAL_LINKS: ISocialLink[] = [
   {
     title: 'Twitter',
     color: 'blue',
@@ -23,4 +23,4 @@ const socialLinks: ISocialLink[] = [
   }
 ]
 
-export default socialLinks
+export default SOCIAL_LINKS
