@@ -25,3 +25,6 @@ To start the project you should complete these steps:
 ## 📑 TODO
 
 - add styles
+
+Updating [17.01.2023]:
+    At this moment, I hided header and footer, because I make style of header. You can see these two last components by adding them to the "Home.tsx" file.
