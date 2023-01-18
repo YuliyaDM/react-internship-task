@@ -1,11 +1,18 @@
-.about {
-	.title {
-	}
-	.info {
-	}
+@use "../../../../../styles/constants/constant" as constant;
+@use "../../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
 
-	&,
-	& > * {
-		background: transparent;
+$parentClassName: about;
+
+.#{$parentClassName} {
+	.#{$parentClassName}__inner {
+		.#{$parentClassName}__title {
+			font: {
+				family: "Inter";
+			}
+		}
 	}
+}
+
+.#{$parentClassName} * {
+	@include constant.transparentBackground;
 }

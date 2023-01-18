@@ -1,6 +1,10 @@
 @use "../../../../styles/constants/constant" as constant;
+@use "../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
+@use "../../../../../../styles/constants/colors/constants/colors-list" as colors;
 
-.navigation__nav {
+$parentClassName: navigation__nav;
+
+.#{$parentClassName} {
 	@include constant.transparentBackground;
 
 	display: flex;
@@ -9,23 +13,24 @@
 	overflow: hidden;
 	cursor: pointer;
 
-	&-title {
+	.#{$parentClassName}-title {
 		@include constant.transparentBackground;
 
 		display: flex;
 		text-align: center;
 		position: relative;
 		letter-spacing: 1.5px;
-		color: white;
+		color: map-get(colors.$colors-types, white-var, darker);
 		text-decoration: none;
 		overflow: hidden;
 		display: flex;
+		opacity: 0.875;
 		justify-content: center;
 		align-items: center;
-		opacity: 0.5;
 		transition: all 1s ease 0s;
 		font: {
 			size: 16px;
+			family: "Inter";
 		}
 		padding: {
 			top: 7.5px;
@@ -35,7 +40,8 @@
 		}
 	}
 
-	&-title:hover {
+	.#{$parentClassName}-title:hover {
+		color: map-get(colors.$colors-types, white-var, lighter);
 		opacity: 1;
 	}
 }

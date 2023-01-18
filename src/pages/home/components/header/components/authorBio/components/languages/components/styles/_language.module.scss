@@ -1,0 +1,28 @@
+@use "../../../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
+@use "../../../../../../../../styles/constants/colors/constants/colors-list" as colors;
+
+$languge-color: map-get(colors.$colors-types, white-var, default);
+
+$language-font-size: map-get(fonts.$font-sizes, medium);
+
+.language {
+	color: $languge-color;
+	letter-spacing: 1px;
+	margin-bottom: 12.5px;
+	cursor: pointer;
+
+	font: {
+		weight: 700;
+		family: "Inter";
+		size: $language-font-size;
+	}
+
+	text: {
+		shadow: 0 0 10px;
+		transform: uppercase;
+	}
+}
+
+.language:last-child {
+	margin-bottom: 0;
+}

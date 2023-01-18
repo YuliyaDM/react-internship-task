@@ -6,7 +6,7 @@ import styles from './styles/_language.module.scss'
 function Language (props: {title: string}) {
 	const { title } = props
 	return (
-		<div>
+		<div className={styles.language}>
 			{title}
 		</div>
 	)

@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from 'react'
+import LOADING_DELAY from '../constants/loadingDelay'
 
 const HomeComponent = lazy(() => import('../pages/home/Home'))
 const ErrorLinkComponent = lazy(() => import('../pages/errors/errorLink/ErrorLink'))
-const DelayedComponent = lazy(() => import('../utils/delayedComponent'))
+const DelayedComponent = lazy(() => import('../components/delayingComponent/DelayingComponent'))
 
 const ErrorBoundary = lazy(() => import('../pages/errors/errorRender/ErrorRender'))
 
@@ -12,7 +13,7 @@ const HomePage = () => {
 	return (
 	<Suspense>
 		<ErrorBoundary>
-			<DelayedComponent renderDelay={1000} text='Redirecting to the correct page . . .'>
+			<DelayedComponent renderDelay={LOADING_DELAY} text='Redirecting to the correct page . . .'>
 				<Suspense fallback={<Loader text="Loading home page . . ." />}>
 					<HomeComponent />
 				</Suspense>
@@ -26,7 +27,7 @@ const ErrorLinkPage = () => {
 	return (
 	<Suspense>
 		<ErrorBoundary>
-			<DelayedComponent renderDelay={1000} text='Redirecting to the correct page . . . '>
+			<DelayedComponent renderDelay={LOADING_DELAY} text='Redirecting to the correct page . . . '>
 				<Suspense fallback={<Loader text="Loading error page . . ." />}>
 					<ErrorLinkComponent />
 				</Suspense>

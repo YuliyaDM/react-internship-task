@@ -1,10 +1,15 @@
+@use "../../../pages/home/styles/constants/colors/constants/colors-list" as colors;
+
+$separator-background: map-get(colors.$colors-types white-var, default);
+
+$parentClassName: separator;
 $separator-size: 7.5px;
 
-.separator {
+.#{$parentClassName} {
 	position: relative;
 	width: $separator-size;
 	height: $separator-size;
-	background: white;
+	background: $separator-background;
 	transform: scale(1);
 	border-radius: 100px;
 	display: inline-block;

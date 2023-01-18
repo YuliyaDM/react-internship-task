@@ -11,11 +11,11 @@ function MainInfo (props: {text: string[]}) {
 	return (
 		<div className={styles['main-info']} ref={mainInfoRef}>
 			<div className={styles['main-info__inner']}>
-				<ol className={styles['main-info__list']}>
+				<div className={styles['main-info__list']}>
 					{text.map((el: string, index: number, array: string[]) => {
-						return <li key={index} className={styles['main-info__list-element']}>{el}</li>
+						return <div key={index} className={styles['main-info__list-element']}>{el}</div>
 					})}
-				</ol>
+				</div>
 			</div>
 		</div>
 	)

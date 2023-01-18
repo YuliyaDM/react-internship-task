@@ -1,0 +1,20 @@
+@use "../../../../../styles/constants/constant" as constant;
+@use "../../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
+@use "../../../../../../../styles/constants/colors/constants/colors-list" as colors;
+
+$name-font-family: "MPR_Bold";
+$name-font-size: map-get(fonts.$font-sizes, "giant");
+$name-font-weight: 600;
+
+$name-color: map-get(colors.$colors-types, white-var, "lighter");
+
+.name {
+	@include constant.transparentBackground;
+	font: {
+		family: $name-font-family;
+		size: $name-font-size;
+		weight: $name-font-weight;
+	}
+	text-shadow: 0 0 10px;
+	color: $name-color;
+}

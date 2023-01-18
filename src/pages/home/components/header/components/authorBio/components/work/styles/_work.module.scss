@@ -1,0 +1,28 @@
+@use "../../../../../styles/constants/constant" as constant;
+@use "../../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
+
+$parentClassName: work;
+
+.#{$parentClassName} {
+	.#{$parentClassName}__container {
+		.#{$parentClassName}__inner {
+			display: flex;
+			text-align: center;
+			justify-content: space-between;
+			div {
+				font: {
+					family: "Inter";
+				}
+			}
+			.#{$parentClassName}__name {
+			}
+
+			.#{$parentClassName}__country {
+			}
+		}
+	}
+}
+
+.#{$parentClassName} * {
+	@include constant.transparentBackground;
+}

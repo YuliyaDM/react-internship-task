@@ -18,12 +18,12 @@ $colors-types: (
 		darker: utils.get-darker(map-get($primary-colors, white-var), 7.5%),
 	),
 	gray-var: (
-		lighter: utils.get-lighter(map-get($primary-colors, gray-var), 7.5%),
+		lighter: utils.get-lighter(map-get($primary-colors, gray-var), 50%),
 		default: map-get($primary-colors, gray-var),
 		darker: utils.get-darker(map-get($primary-colors, gray-var), 7.5%),
 	),
 	black-var: (
-		lighter: utils.get-lighter(map-get($primary-colors, black-var), 7.5%),
+		lighter: utils.get-lighter(map-get($primary-colors, black-var), 50%),
 		default: map-get($primary-colors, black-var),
 		darker: utils.get-darker(map-get($primary-colors, black-var), 7.5%),
 	),

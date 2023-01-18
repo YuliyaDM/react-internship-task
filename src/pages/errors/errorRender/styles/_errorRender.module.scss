@@ -1,0 +1,10 @@
+$parentClassName: error-boundary;
+
+.#{$parentClassName} {
+	.#{$parentClassName}__container {
+		.#{$parentClassName}__inner {
+			.#{$parentClassName}__text {
+			}
+		}
+	}
+}

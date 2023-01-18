@@ -1,5 +1,7 @@
 @use "../../../pages/home/styles/constants/colors/constants/colors-list" as colors;
 
+$parentClassName: loader;
+
 $white: map-get(colors.$colors-types, white-var, default);
 $black: map-get(colors.$colors-types, black-var, default);
 
@@ -8,7 +10,7 @@ $loader__animation-component-background: radial-gradient($black, $white);
 $loader__animation-component-box-shadow: 0px 0px 10px $white;
 $loader__animation-components-amount: 12;
 
-.loader {
+.#{$parentClassName} {
 	display: block;
 	position: relative;
 	background: transparent;
@@ -17,73 +19,75 @@ $loader__animation-components-amount: 12;
 	align-items: center;
 	width: 100%;
 	height: 100%;
-}
 
-.loader__inner {
-	width: 25vw;
-	height: 25vw;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+	.#{$parentClassName}__inner {
+		width: 25vw;
+		height: 25vw;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-.loader__text {
-	color: $loader__text-background;
-	letter-spacing: 1px;
-	z-index: 1;
-	background: transparent;
-	white-space: pre;
-	font: {
-		weight: 700;
-		size: 1.5vw;
-		style: italic;
-	}
-}
+		.#{$parentClassName}__text {
+			color: $loader__text-background;
+			letter-spacing: 1px;
+			z-index: 1;
+			background: transparent;
+			white-space: pre;
+			font: {
+				weight: 700;
+				size: 1.5vw;
+				style: italic;
+			}
+		}
 
-.loader__animation {
-	max-width: 100%;
-	width: 90%;
-	min-width: 50%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-@for $i from 1 through $loader__animation-components-amount {
-	.loader__animation-component:nth-child(#{$i}) {
-		position: absolute;
-		top: 0;
-		left: 0;
-		transform: rotate($i * 30deg);
-		width: 100%;
-		height: 100%;
-		background: transparent;
-		&::after {
-			content: "";
+		.#{$parentClassName}__animation {
+			max-width: 100%;
+			width: 90%;
+			min-width: 50%;
+			height: 100%;
+			position: absolute;
 			top: 0;
 			left: 0;
-			width: 1vw;
-			height: 1vw;
-			z-index: $i;
-			position: fixed;
-			border-radius: 100%;
-			background: rgba(255, 0, 0, 0.5);
-			filter: hue-rotate($i * 30deg);
-			animation: change-size 1.25s ease 0s infinite;
-			animation-delay: $i * 0.1s;
-			opacity: 0;
-			transform: scale(1);
-		}
-		@keyframes change-size {
-			0% {
-				opacity: 1;
-				transform: scale(1.5);
-			}
-			100% {
-				opacity: 0;
-				transform: scale(1);
+
+			@for $i from 1 through $loader__animation-components-amount {
+				.#{$parentClassName}__animation-component:nth-child(#{$i}) {
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: rotate($i * 30deg);
+					width: 100%;
+					height: 100%;
+					background: transparent;
+
+					&::after {
+						content: "";
+						top: 0;
+						left: 0;
+						width: 1vw;
+						height: 1vw;
+						z-index: $i;
+						position: fixed;
+						border-radius: 100%;
+						background: rgba(255, 0, 0, 0.5);
+						filter: hue-rotate($i * 30deg);
+						animation: change-size 1.25s ease 0s infinite;
+						animation-delay: $i * 0.1s;
+						opacity: 0;
+						transform: scale(1);
+					}
+
+					@keyframes change-size {
+						0% {
+							opacity: 1;
+							transform: scale(1.5);
+						}
+						100% {
+							opacity: 0;
+							transform: scale(1);
+						}
+					}
+				}
 			}
 		}
 	}

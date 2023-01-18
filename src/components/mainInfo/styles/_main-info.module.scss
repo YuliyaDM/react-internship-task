@@ -1,7 +1,23 @@
-.main-info {
-	color: white;
+@use "../../../pages/home/styles/constants/colors/constants/colors-list" as colors;
+@use "../../../pages/home/styles/constants/fonts/constants/fonts-list" as fonts;
+
+$main-info-color: map-get(colors.$colors-types, black-var, default);
+
+$parentClassName: main-info;
+
+.#{$parentClassName} {
+	color: $main-info-color;
 	position: relative;
 	text-transform: uppercase;
 	white-space: break-spaces;
 	font-weight: bold;
+	.#{$parentClassName}__inner {
+		.#{$parentClassName}__list {
+			.#{$parentClassName}__list-element {
+				font: {
+					family: "Inter";
+				}
+			}
+		}
+	}
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './styles/_button.module.scss'
 
-function Button (props: {text: string, className: any}) {
+function Button (props: {text: string, className: string}) {
 	const { text, className } = props
 
 	return (

@@ -1,0 +1,9 @@
+@use "../../../pages/home/styles/constants/colors/constants/colors-list" as colors;
+
+$button-background: map-get(colors.$colors-types, black-var, default);
+$button-color: map-get(colors.$colors-types, white-var, default);
+
+.button {
+	background: $button-background;
+	color: $button-color;
+}

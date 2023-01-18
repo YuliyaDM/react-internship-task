@@ -1,33 +1,34 @@
 @use "sass:map";
+@use "../utils/fonts.module" as fonts;
 
 $font-weights: (
-	"light": 300,
-	"regular": 400,
-	"medium": 600,
-	"bold": 800,
+	light: 300,
+	regular: 400,
+	medium: 600,
+	bold: 800,
 );
 
 $font-sizes: (
-	"smaller": 10px,
-	"small": 12px,
-	"meduium": 14px,
-	"default": 16px,
-	"big": 24px,
-	"bigger": 32px,
-	"biggest": 56px,
-	"giant": 156px,
+	smaller: 10px,
+	small: 12px,
+	medium: 14px,
+	default: 16px,
+	big: 24px,
+	bigger: 32px,
+	biggest: 56px,
+	giant: 124px,
 	// for the header phrase
 );
 
 $font-styles: (
-	"default": normal,
-	"oblique": oblique,
+	default: normal,
+	oblique: oblique,
 );
 
-$fonts-list: (
-	roboto: url("../../../../../../assets/fonts/Montserrat/static/Montserrat-Black.ttf"),
-	sans-serif: url(""),
-	monospace: url(""),
-	font-family_4: url(""),
-	font-family_5: url(""),
-);
+@include fonts.generate("Montserrat/Montserrat-VariableFont_wght.ttf", "Montserrat");
+
+@include fonts.generate("Inter/Inter-VariableFont_slnt\,wght.ttf", "Inter");
+
+@include fonts.generate("M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf", "MPR_Regular");
+@include fonts.generate("M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf", "MPR_Light");
+@include fonts.generate("M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf", "MPR_Bold");

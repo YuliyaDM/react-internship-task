@@ -10,6 +10,7 @@ class ErrorBoundary extends React.Component<{children: React.ReactNode}, { isErr
 	}
 
 	static getDerivedStateFromError (error: ErrorBoundary) {
+		document.title = 'Error rendering page'
 		return { isError: true }
 	}
 
@@ -22,7 +23,17 @@ class ErrorBoundary extends React.Component<{children: React.ReactNode}, { isErr
 		{
 			if (this.state.isError) {
 				return (
-					<h1>Oops! Some error in rendering has happened.</h1>
+					<div className={styles['error-boundary']}>
+						<div className={styles['error-boundary__container']}>
+							<div className={styles['error-boundary__inner']}>
+								<div className={styles['error-boundary__text']}>
+									<h1>We are sorry! It seems some errors during rendering have happened.</h1>
+									<br />
+									<p>Try to reload the page.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				)
 			}
 			return this.props.children

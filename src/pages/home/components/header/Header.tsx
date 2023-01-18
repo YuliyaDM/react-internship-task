@@ -9,10 +9,10 @@ import styles from './styles/_header.module.scss'
 
 export default function Header () {
   return (
-	<Suspense fallback={<h1>Loading header . . . </h1>}>
+	<Suspense fallback={<Loader text='Loading header . . .' />}>
 		<header className={styles.header}>
 			<Navigation />
-			<AuthorBio authorName='John Doe' country='Slovakia' proffession='UI/UX designer'/>
+			<AuthorBio authorName='Daniel Banquo' country='Slovakia' proffession='Multidisciplinary designer'/>
 		</header>
 	</Suspense>
   )

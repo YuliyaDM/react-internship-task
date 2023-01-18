@@ -1,0 +1,16 @@
+@use "../../../../../styles/constants/constant" as constant;
+
+$parentClassName: languages;
+
+.#{$parentClassName} {
+	@include constant.transparentBackground;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	.#{$parentClassName}__list {
+	}
+	.hireMe {
+	}
+}
