@@ -32,4 +32,4 @@ npm start
 
 **Updating [17.01.2023]:**
 
-At this moment, I hided header and footer, because I make style of header. You can see these two last components by adding them to the "Home.tsx" file.
+At this moment, I hided main block and footer, because I make style of header. You can see these two last components by adding them to the "Home.tsx" file.
