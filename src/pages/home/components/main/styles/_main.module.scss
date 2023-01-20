@@ -2,9 +2,5 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	&__container {
-		max-width: 80%;
-		width: 90%;
-		min-width: 85%;
-	}
+	flex-direction: column;
 }

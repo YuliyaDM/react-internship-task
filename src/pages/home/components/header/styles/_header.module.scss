@@ -1,13 +1,15 @@
 $header-width: 100%;
-$background-image-url: url("../../../../../assets/images/author/author_3.jpg");
+$background-image-url: url("../../../../../assets/images/author/author_1.avif");
 
 .header {
 	width: $header-width;
 	background: {
 		image: $background-image-url;
-		color: rgb(97, 133, 101);
+		color: rgb(61, 84, 64);
 		position: center;
 		size: 100% auto;
 		repeat: no-repeat;
 	}
+
+	position: relative;
 }

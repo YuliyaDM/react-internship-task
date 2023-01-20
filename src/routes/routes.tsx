@@ -45,16 +45,12 @@ const ROUTES = [
 			{
 				path: 'Home',
 				element: <HomePage />
-			},
-			{
-				path: 'HOME',
-				element: <HomePage />
-			},
-			{
-				path: 'home',
-				element: <HomePage />
 			}
 		]
+	},
+	{
+		path: '/registration',
+		element: <div>Registration will be on this site soon . . . 🤫</div>
 	},
 	{
 		path: '*',

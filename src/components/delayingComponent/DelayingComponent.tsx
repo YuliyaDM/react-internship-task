@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-key */
 import React, { useState, useEffect, lazy, Suspense } from 'react'
-import wait from '../../utils/wait'
 
 const Loader = lazy(() => import('../loader/Loader'))
 

@@ -1,0 +1,8 @@
+$parentClassName: property;
+
+.#{$parentClassName} {
+	color: gray;
+	font: {
+		size: 11px;
+	}
+}

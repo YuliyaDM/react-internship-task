@@ -1,20 +1,25 @@
-@use "../../../../../styles/constants/constant" as constant;
-@use "../../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
-@use "../../../../../../../styles/constants/colors/constants/colors-list" as colors;
+@use "../../../../../styles/mixins.module" as mixins;
+@use "/src/styles/fonts/global.module" as fonts;
+@use "/src/styles/colors/global.module" as colors;
 
 $name-font-family: "MPR_Bold";
-$name-font-size: map-get(fonts.$font-sizes, "giant");
-$name-font-weight: 600;
+$name-font-size: map-get(fonts.$sizes, giant);
+$name-font-weight: map-get(fonts.$weights, bold);
 
-$name-color: map-get(colors.$colors-types, white-var, "lighter");
+$name-color: map-get(colors.$types, white-var, lighter);
 
 .name {
-	@include constant.transparentBackground;
+	@include mixins.transparent-background;
 	font: {
 		family: $name-font-family;
 		size: $name-font-size;
 		weight: $name-font-weight;
 	}
-	text-shadow: 0 0 10px;
+	text: {
+		// shadow: 0 0 10px;
+		transform: uppercase;
+	}
+
+	pointer-events: auto;
 	color: $name-color;
 }

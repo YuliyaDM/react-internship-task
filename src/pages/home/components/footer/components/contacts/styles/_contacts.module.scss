@@ -1,0 +1,12 @@
+$parentClassName: contacts;
+
+.#{$parentClassName} {
+	.#{$parentClassName}__container {
+		.#{$parentClassName}__inner {
+			.#{$parentClassName}__list {
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}

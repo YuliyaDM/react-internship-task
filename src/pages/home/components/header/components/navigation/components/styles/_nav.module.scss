@@ -1,11 +1,14 @@
-@use "../../../../styles/constants/constant" as constant;
-@use "../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
-@use "../../../../../../styles/constants/colors/constants/colors-list" as colors;
+@use "../../../../styles/mixins.module" as mixins;
+@use "/src/styles/fonts/global.module" as fonts;
+@use "/src/styles/colors/global.module" as colors;
 
 $parentClassName: navigation__nav;
 
+$navigation__nav-title-color: map-get(colors.$types, white-var, darker);
+$navigation__nav-title-color-hover: map-get(colors.$types, white-var, lighter);
+
 .#{$parentClassName} {
-	@include constant.transparentBackground;
+	@include mixins.transparent-background;
 
 	display: flex;
 	justify-content: center;
@@ -14,20 +17,22 @@ $parentClassName: navigation__nav;
 	cursor: pointer;
 
 	.#{$parentClassName}-title {
-		@include constant.transparentBackground;
+		@include mixins.transparent-background;
 
-		display: flex;
 		text-align: center;
 		position: relative;
+		color: $navigation__nav-title-color;
 		letter-spacing: 1.5px;
-		color: map-get(colors.$colors-types, white-var, darker);
 		text-decoration: none;
 		overflow: hidden;
-		display: flex;
 		opacity: 0.875;
+
+		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		transition: all 1s ease 0s;
+
 		font: {
 			size: 16px;
 			family: "Inter";
@@ -38,10 +43,14 @@ $parentClassName: navigation__nav;
 			left: 10px;
 			right: 10px;
 		}
+		.#{$parentClassName}-title-text {
+			@include mixins.header-title;
+			margin: 0 !important;
+		}
 	}
 
 	.#{$parentClassName}-title:hover {
-		color: map-get(colors.$colors-types, white-var, lighter);
+		color: $navigation__nav-title-color-hover;
 		opacity: 1;
 	}
 }

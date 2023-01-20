@@ -1,4 +1,23 @@
+@use "/src/styles/colors/global.module" as colors;
+@use "/src/styles/fonts/global.module" as fonts;
+
+$title-color: map-get(colors.$types, white-var, lighter);
+
+$title-font-size: map-get(fonts.$sizes, small);
+$title-font-weight: map-get(fonts.$weights, regular);
+$title-font-family: "Inter";
+
 .title {
-	color: white;
 	letter-spacing: 1px;
+	color: $title-color;
+	cursor: auto;
+	pointer-events: auto;
+	text: {
+		transform: uppercase;
+	}
+	font: {
+		family: $title-font-family;
+		size: $title-font-size;
+		weight: $title-font-weight;
+	}
 }

@@ -1,9 +1,9 @@
-@use "../../../../styles/constants/constant" as constants;
+@use "../../../../styles/mixins.module" as mixins;
 
 $animation-duration: 0.75s;
 
 .animation {
-	@include constants.transparentBackground;
+	@include mixins.transparent-background;
 
 	width: 100%;
 	height: 100%;

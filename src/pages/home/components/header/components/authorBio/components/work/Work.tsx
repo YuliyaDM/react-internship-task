@@ -1,4 +1,5 @@
 import React from 'react'
+import Title from '../../../../../../../../components/title/Title'
 
 import styles from './styles/_work.module.scss'
 
@@ -8,8 +9,8 @@ function Work (props: { name: string, country: string }) {
 		<div className={styles.work}>
 			<div className={styles.work__container}>
 				<div className={styles.work__inner}>
-					<div className={styles.work__name}>{name}</div>
-					<div className={styles.work__country}>{country}</div>
+					<Title className={styles.work__name} text={name} />
+					<Title className={styles.work__country} text={country} />
 				</div>
 			</div>
 		</div>

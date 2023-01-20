@@ -1,3 +1,5 @@
+$elements-default-background: rgb(15, 15, 15);
+
 *,
 *::after,
 *::before {
@@ -6,7 +8,7 @@
 	border: 0;
 	font-size: 100%;
 	color: white;
-	background: black;
+	background: $elements-default-background;
 	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
@@ -14,8 +16,12 @@
 }
 
 *::selection {
-	color: black;
+	color: $elements-default-background;
 	background: white;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 html,

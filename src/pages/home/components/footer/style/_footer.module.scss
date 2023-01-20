@@ -1,0 +1,27 @@
+$parentClassName: footer;
+
+.#{$parentClassName} {
+	width: 100%;
+	border: {
+		top: 2px solid white;
+	}
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.#{$parentClassName}__container {
+		max-width: 80%;
+		width: 100%;
+		min-width: 90%;
+		height: 50%;
+
+		.#{$parentClassName}__inner {
+			width: 85%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+}

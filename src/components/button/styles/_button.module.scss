@@ -1,17 +1,22 @@
-@forward "../../../pages/home/styles/constants/fonts/constants/fonts-list";
+@use "/src/styles/colors/global.module" as colors;
+
+$button-color: map-get(colors.$types, gray-var, darker);
 
 .button {
-	font-family: "Montserrat", sans-serif;
 	background: white !important;
 	padding: {
-		left: 15px;
-		right: 15px;
-		top: 7.5px;
-		bottom: 7.5px;
+		left: 20px;
+		right: 20px;
+		top: 15px;
+		bottom: 15px;
 	}
-	font-weight: 700;
-	letter-spacing: 1px;
-	color: black;
+	font: {
+		size: 14px;
+		weight: 600;
+		family: "Montserrat", sans-serif;
+	}
+	letter-spacing: 0.5px;
+	color: $button-color;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 25px;
 }

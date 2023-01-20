@@ -1,7 +1,7 @@
-@use "../../../pages/home/styles/constants/colors/constants/colors-list" as colors;
-@use "../../../pages/home/styles/constants/fonts/constants/fonts-list" as fonts;
+@use "/src/styles/colors/global.module" as colors;
+@use "/src/styles/fonts/global.module" as fonts;
 
-$main-info-color: map-get(colors.$colors-types, black-var, default);
+$main-info-color: map-get(colors.$types, black-var, default);
 
 $parentClassName: main-info;
 
@@ -10,12 +10,32 @@ $parentClassName: main-info;
 	position: relative;
 	text-transform: uppercase;
 	white-space: break-spaces;
-	font-weight: bold;
+	font-weight: 600;
 	.#{$parentClassName}__inner {
 		.#{$parentClassName}__list {
 			.#{$parentClassName}__list-element {
 				font: {
 					family: "Inter";
+				}
+				line-height: 20px;
+				pointer-events: auto;
+				padding-right: 30px;
+				display: inline-flex;
+				align-items: center;
+				position: relative;
+				&::after {
+					content: "";
+					background: white;
+					height: 5px;
+					width: 5px;
+					border-radius: 50%;
+					position: absolute;
+					right: 12.5px;
+				}
+			}
+			.#{$parentClassName}__list-element:last-child {
+				&::after {
+					display: none;
 				}
 			}
 		}

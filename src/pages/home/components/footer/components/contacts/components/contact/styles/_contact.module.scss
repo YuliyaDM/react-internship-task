@@ -1,0 +1,27 @@
+$parentClassName: contact;
+
+.#{$parentClassName} {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 35px;
+	margin-right: 75px;
+
+	.#{$parentClassName}__title {
+		color: gray;
+		font-size: 11px;
+	}
+	.#{$parentClassName}__info {
+		display: flex;
+		.#{$parentClassName}__info-element {
+			margin-right: 15px;
+		}
+		.#{$parentClassName}__info-element:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+.#{$parentClassName}:last-child {
+	margin-right: 0px;
+}

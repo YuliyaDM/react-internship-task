@@ -1,4 +1,5 @@
 import React from 'react'
+import Title from '../../../../../../../../../components/title/Title'
 
 // @ts-ignore
 import styles from './styles/_language.module.scss'
@@ -6,9 +7,7 @@ import styles from './styles/_language.module.scss'
 function Language (props: {title: string}) {
 	const { title } = props
 	return (
-		<div className={styles.language}>
-			{title}
-		</div>
+		<Title className={styles.language} text={title} />
 	)
 }
 

@@ -1,7 +1,0 @@
-@mixin transparentBackground {
-	background: transparent;
-	&,
-	& > * {
-		background: transparent;
-	}
-}

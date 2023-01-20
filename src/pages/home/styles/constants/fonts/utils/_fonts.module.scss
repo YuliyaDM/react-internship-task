@@ -1,8 +1,0 @@
-@mixin generate($path, $title) {
-	$base-url: "../../../../../../assets/fonts/";
-
-	@font-face {
-		font-family: $title;
-		src: url($base-url + $path);
-	}
-}

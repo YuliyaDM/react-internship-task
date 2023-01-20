@@ -11,7 +11,7 @@ function AuthorBio (props: { authorName: string, country: string, proffession: s
 	const { authorName, country, proffession } = props
 	
 	return (
-		<section className={styles['author-bio']}>
+		<section className={styles['author-bio']} id="about">
 			<div className={styles['author-bio__container']}>
 				<div className={styles['author-bio__inner']}>
 					<div className={styles['author-bio__basic-info']}>

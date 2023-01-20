@@ -1,16 +1,14 @@
-@use "../../../../../styles/constants/constant" as constant;
+@use "../../../../../styles/mixins.module" as mixins;
 
 $parentClassName: languages;
 
 .#{$parentClassName} {
-	@include constant.transparentBackground;
+	@include mixins.transparent-background;
 
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 
 	.#{$parentClassName}__list {
-	}
-	.hireMe {
 	}
 }

@@ -1,0 +1,37 @@
+@use "sass:map";
+@use "./mixins.module" as mixins;
+
+$weights: (
+	light: 300,
+	regular: 400,
+	medium: 600,
+	big: 700,
+	bold: 800,
+	bolder: bold,
+	boldest: bolder,
+);
+
+$sizes: (
+	smaller: 10px,
+	small: 12px,
+	medium: 14px,
+	default: 16px,
+	big: 24px,
+	bigger: 32px,
+	biggest: 48px,
+	giant: 124px,
+	// for the header phrase
+);
+
+$styles: (
+	default: normal,
+	oblique: oblique,
+);
+
+@include mixins.generate("Montserrat/Montserrat-VariableFont_wght.ttf", "Montserrat");
+
+@include mixins.generate("Inter/Inter-VariableFont_slnt\,wght.ttf", "Inter");
+
+@include mixins.generate("M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf", "MPR_Regular");
+@include mixins.generate("M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf", "MPR_Light");
+@include mixins.generate("M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf", "MPR_Bold");

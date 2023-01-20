@@ -1,0 +1,17 @@
+@mixin header-title {
+	margin: {
+		top: 12.5px;
+		bottom: 12.5px;
+	}
+	letter-spacing: 1px;
+	font-weight: 400 !important;
+	font-size: 14px !important;
+}
+
+@mixin transparent-background {
+	background: transparent;
+	&,
+	& > * {
+		background: transparent;
+	}
+}

@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "sass:color";
+@use "sass:list";
+@use "./utils.module" as utils;
+
+$black: rgb(0, 0, 0);
+
+$primary: (
+	white-var: rgb(242, 242, 242),
+	gray-var: rgb(85, 85, 85),
+	black-var: rgb(0, 0, 0),
+);
+
+$types: (
+	white-var: (
+		lighter: utils.get-lighter(map-get($primary, white-var), 50%),
+		default: map-get($primary, white-var),
+		darker: utils.get-darker(map-get($primary, white-var), 50%),
+	),
+	gray-var: (
+		lighter: utils.get-lighter(map-get($primary, gray-var), 50%),
+		default: map-get($primary, gray-var),
+		darker: utils.get-darker(map-get($primary, gray-var), 50%),
+	),
+	black-var: (
+		lighter: utils.get-lighter(map-get($primary, black-var), 50%),
+		default: map-get($primary, black-var),
+		darker: utils.get-darker(map-get($primary, black-var), 50%),
+	),
+);

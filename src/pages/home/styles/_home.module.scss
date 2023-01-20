@@ -1,7 +1,7 @@
 @use "sass:map";
-@use "../styles/constants/colors/constants/colors-list" as colors;
+@use "/src/styles/colors/global.module" as colors;
 
-$background: map-get(colors.$colors-types, black-var, lighter);
+$background: map-get(colors.$types, black-var, lighter);
 
 .home {
 	width: 100%;

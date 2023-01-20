@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useContext, createContext } from 'react'
+import React, { lazy, Suspense } from 'react'
 
 import DelayingComponent from '../../components/delayingComponent/DelayingComponent'
 import LOADING_DELAY from '../../constants/loadingDelay'
@@ -36,7 +36,7 @@ function Home () {
 			<ErrorBoundary>
 				<DelayingComponent renderDelay={LOADING_DELAY} text='Redirecting to the home page . . .'>
 					<Suspense fallback={<Loader text="Loading home page . . ." />}>
-							<div className='home'>
+						  <div className='home'>
 							  	<Header />
 						  		<Main />
 						  		<Footer/>

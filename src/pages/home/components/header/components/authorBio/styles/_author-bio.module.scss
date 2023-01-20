@@ -1,4 +1,4 @@
-@use "../../../styles/constants/constant" as constant;
+@use "../../../styles/mixins.module" as mixins;
 
 $parentClassName: author-bio;
 
@@ -7,13 +7,15 @@ $parentClassName: author-bio;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 550px;
+	height: 650px;
 
 	.#{$parentClassName}__container {
+		z-index: 2;
+		pointer-events: none;
 		max-width: 75%;
 		width: 100%;
 		min-width: 90%;
-		height: 90%;
+		height: 85%;
 
 		.#{$parentClassName}__inner {
 			height: 100%;
@@ -26,5 +28,5 @@ $parentClassName: author-bio;
 
 .#{$parentClassName} *,
 .#{$parentClassName} {
-	@include constant.transparentBackground;
+	@include mixins.transparent-background;
 }

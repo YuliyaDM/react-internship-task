@@ -1,0 +1,36 @@
+.carousel {
+	* {
+		background: none;
+		user-select: none;
+	}
+	button.control-arrow {
+		&::before {
+			background: transparent !important;
+			scale: 1.5;
+			margin: 0 15px !important;
+		}
+	}
+	button.control-arrow.control-prev {
+		&::after {
+			left: 0;
+		}
+	}
+	button.control-arrow.control-next {
+		&::after {
+			right: 0;
+		}
+	}
+	ul.control-dots {
+		background: transparent;
+		li.dot {
+			opacity: 0.625 !important;
+			box-shadow: none !important;
+			transition: none !important;
+		}
+
+		li.dot.selected,
+		li.dot:hover {
+			opacity: 1 !important;
+		}
+	}
+}

@@ -1,11 +1,13 @@
-@use "../../../../../styles/constants/constant" as constant;
-@use "../../../../../../../styles/constants/fonts/constants/fonts-list" as fonts;
+@use "../../../../../styles/mixins.module" as mixins;
+@use "/src/styles/fonts/global.module" as fonts;
 
 $parentClassName: about;
 
 .#{$parentClassName} {
 	.#{$parentClassName}__inner {
 		.#{$parentClassName}__title {
+			@include mixins.header-title;
+
 			font: {
 				family: "Inter";
 			}
@@ -14,5 +16,5 @@ $parentClassName: about;
 }
 
 .#{$parentClassName} * {
-	@include constant.transparentBackground;
+	@include mixins.transparent-background;
 }

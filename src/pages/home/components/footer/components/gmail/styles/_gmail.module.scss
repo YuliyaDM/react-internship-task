@@ -1,0 +1,42 @@
+@use "/src/styles/colors/global.module" as colors;
+@use "/src/styles/fonts/global.module" as fonts;
+@use "/src/styles/mixins/mixins.module" as mixins;
+@use "/src/styles/utils/utils.module" as utils;
+
+$parentClassName: gmail;
+
+$gmail-color: map-get(colors.$types, white-var, default);
+
+$gmail-text-font-size: map-get(fonts.$sizes, biggest);
+$gmail-text-font-weight: map-get(fonts.$weights, medium);
+
+.#{$parentClassName} {
+	a,
+	div {
+		color: $gmail-color;
+	}
+	.#{$parentClassName}__link {
+		display: flex;
+		position: relative;
+		align-items: center;
+		flex-wrap: wrap;
+		letter-spacing: 2px;
+		text: {
+			decoration: none;
+		}
+		.#{$parentClassName}__name {
+			text: {
+				transform: uppercase;
+			}
+			font: {
+				family: "Inter";
+				size: $gmail-text-font-size;
+				weight: $gmail-text-font-weight;
+			}
+		}
+		.#{$parentClassName}__open-button {
+			margin-left: 37.5px;
+			background: transparent;
+		}
+	}
+}

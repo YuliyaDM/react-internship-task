@@ -1,5 +1,6 @@
-import React, { useState, lazy } from 'react'
+import React, { lazy } from 'react'
 import NAVS_LIST from '../../../../../../constants/navsList'
+import INav from '../../../../../../interfaces/INav.interfaces'
 
 const Nav = lazy(() => import('./components/Nav'))
 
@@ -12,7 +13,7 @@ function Navigation () {
 	<nav className={styles.navigation}>
 		<div className={styles.navigation__container}>
 			<div className={styles.navigation__inner}>
-				  {navList.map(({ title, linkTo }, index: number) => <Nav title={title} linkTo={linkTo} key={index} />) }
+				  {navList.map((el: INav, index: number) => <Nav nav={el} key={index} />) }
 			</div>
 		</div>
     </nav>

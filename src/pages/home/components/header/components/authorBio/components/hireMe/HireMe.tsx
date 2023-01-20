@@ -5,7 +5,7 @@ import styles from './styles/_hire-me.module.scss'
 
 function HireMe () {
 	return (
-		<Button text='Hire me' className={styles['hire-me']} />
+		<Button text='Hire me' className={styles['hire-me']} href="mailto:juliapirogova03@gmail.com" />
 	)
 }
 

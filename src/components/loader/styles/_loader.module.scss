@@ -1,9 +1,9 @@
-@use "../../../pages/home/styles/constants/colors/constants/colors-list" as colors;
+@use "/src/styles/colors/global.module" as colors;
 
 $parentClassName: loader;
 
-$white: map-get(colors.$colors-types, white-var, default);
-$black: map-get(colors.$colors-types, black-var, default);
+$white: map-get(colors.$types, white-var, default);
+$black: map-get(colors.$types, black-var, default);
 
 $loader__text-background: $white;
 $loader__animation-component-background: radial-gradient($black, $white);
