@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkresume_app=self.webpackChunkresume_app||[]).push([[753],{6753:function(e,n,a){a.r(n),a.d(n,{default:function(){return s}});a(2791);var r="_name_name__x-7Nd",u=a(184);var s=function(e){var n=e.name;return(0,u.jsx)("strong",{className:r,children:n})}}}]);
+//# sourceMappingURL=753.2edc8e85.chunk.js.map
