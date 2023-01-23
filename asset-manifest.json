@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/react-internship-task/static/js/main.3cb27e29.js",
+    "main.js": "/react-internship-task/static/js/main.59bdad20.js",
     "static/js/657.8654b80d.chunk.js": "/react-internship-task/static/js/657.8654b80d.chunk.js",
     "static/css/932.31d6cfe0.chunk.css": "/react-internship-task/static/css/932.31d6cfe0.chunk.css",
     "static/js/932.9c9b1ca1.chunk.js": "/react-internship-task/static/js/932.9c9b1ca1.chunk.js",
@@ -17,7 +17,7 @@
     "static/css/2.8c03e935.chunk.css": "/react-internship-task/static/css/2.8c03e935.chunk.css",
     "static/js/2.234ca8d5.chunk.js": "/react-internship-task/static/js/2.234ca8d5.chunk.js",
     "static/css/713.564fe1c4.chunk.css": "/react-internship-task/static/css/713.564fe1c4.chunk.css",
-    "static/js/713.42e596ba.chunk.js": "/react-internship-task/static/js/713.42e596ba.chunk.js",
+    "static/js/713.d4fb8673.chunk.js": "/react-internship-task/static/js/713.d4fb8673.chunk.js",
     "static/css/852.5c450432.chunk.css": "/react-internship-task/static/css/852.5c450432.chunk.css",
     "static/js/852.539ccc0a.chunk.js": "/react-internship-task/static/js/852.539ccc0a.chunk.js",
     "static/css/49.c009d5b6.chunk.css": "/react-internship-task/static/css/49.c009d5b6.chunk.css",
@@ -35,7 +35,7 @@
     "static/css/617.fadfb129.chunk.css": "/react-internship-task/static/css/617.fadfb129.chunk.css",
     "static/js/617.7c4c3b03.chunk.js": "/react-internship-task/static/js/617.7c4c3b03.chunk.js",
     "static/css/228.296f7cc1.chunk.css": "/react-internship-task/static/css/228.296f7cc1.chunk.css",
-    "static/js/228.8e99d39c.chunk.js": "/react-internship-task/static/js/228.8e99d39c.chunk.js",
+    "static/js/228.00cd7575.chunk.js": "/react-internship-task/static/js/228.00cd7575.chunk.js",
     "static/css/526.278ed3ef.chunk.css": "/react-internship-task/static/css/526.278ed3ef.chunk.css",
     "static/js/526.030e8ea3.chunk.js": "/react-internship-task/static/js/526.030e8ea3.chunk.js",
     "static/js/995.183a6091.chunk.js": "/react-internship-task/static/js/995.183a6091.chunk.js",
@@ -65,7 +65,7 @@
     "static/media/background_11.jpg": "/react-internship-task/static/media/background_11.b6153fe7c0284b50b148.jpg",
     "static/media/background_8.jpg": "/react-internship-task/static/media/background_8.f6c0330ad0f356f2cbe9.jpg",
     "index.html": "/react-internship-task/index.html",
-    "main.3cb27e29.js.map": "/react-internship-task/static/js/main.3cb27e29.js.map",
+    "main.59bdad20.js.map": "/react-internship-task/static/js/main.59bdad20.js.map",
     "657.8654b80d.chunk.js.map": "/react-internship-task/static/js/657.8654b80d.chunk.js.map",
     "932.9c9b1ca1.chunk.js.map": "/react-internship-task/static/js/932.9c9b1ca1.chunk.js.map",
     "630.96a88b09.chunk.js.map": "/react-internship-task/static/js/630.96a88b09.chunk.js.map",
@@ -81,7 +81,7 @@
     "2.8c03e935.chunk.css.map": "/react-internship-task/static/css/2.8c03e935.chunk.css.map",
     "2.234ca8d5.chunk.js.map": "/react-internship-task/static/js/2.234ca8d5.chunk.js.map",
     "713.564fe1c4.chunk.css.map": "/react-internship-task/static/css/713.564fe1c4.chunk.css.map",
-    "713.42e596ba.chunk.js.map": "/react-internship-task/static/js/713.42e596ba.chunk.js.map",
+    "713.d4fb8673.chunk.js.map": "/react-internship-task/static/js/713.d4fb8673.chunk.js.map",
     "852.5c450432.chunk.css.map": "/react-internship-task/static/css/852.5c450432.chunk.css.map",
     "852.539ccc0a.chunk.js.map": "/react-internship-task/static/js/852.539ccc0a.chunk.js.map",
     "49.c009d5b6.chunk.css.map": "/react-internship-task/static/css/49.c009d5b6.chunk.css.map",
@@ -99,13 +99,13 @@
     "617.fadfb129.chunk.css.map": "/react-internship-task/static/css/617.fadfb129.chunk.css.map",
     "617.7c4c3b03.chunk.js.map": "/react-internship-task/static/js/617.7c4c3b03.chunk.js.map",
     "228.296f7cc1.chunk.css.map": "/react-internship-task/static/css/228.296f7cc1.chunk.css.map",
-    "228.8e99d39c.chunk.js.map": "/react-internship-task/static/js/228.8e99d39c.chunk.js.map",
+    "228.00cd7575.chunk.js.map": "/react-internship-task/static/js/228.00cd7575.chunk.js.map",
     "526.278ed3ef.chunk.css.map": "/react-internship-task/static/css/526.278ed3ef.chunk.css.map",
     "526.030e8ea3.chunk.js.map": "/react-internship-task/static/js/526.030e8ea3.chunk.js.map",
     "995.183a6091.chunk.js.map": "/react-internship-task/static/js/995.183a6091.chunk.js.map",
     "861.2bb743a5.chunk.js.map": "/react-internship-task/static/js/861.2bb743a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3cb27e29.js"
+    "static/js/main.59bdad20.js"
   ]
 }
